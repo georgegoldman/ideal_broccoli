@@ -73,6 +73,14 @@ Use the init function to create the token and set up its metadata.
 
 Invoke the mint function to create new tokens and transfer them to a recipient address.
 
+8. Retrieve the Treasury Object:
+
+you need this for your treasury parameter when testing the smart contract on suisan.
+In the deployment output, navigate to the Object Changes section. Look for an entry with the ObjectType:
+```
+ObjectType: 0x2::coin::TreasuryCap<0x0000000000000000000000000000000000000000000000000000000000000000::fungible::FUNGIBLE>
+```
+so you are using ```<ObjectID>``` not the address of the ```<ObjectType>```
 
 ## Learning Experience
 This project provided valuable insights into:
